@@ -13,11 +13,11 @@ typedef struct stacktype
 void main()
 {
  int item,choice,x,*p;
- void push(stack *,int);
- int pop(stack *);
- int peep(stack *);
- int isoverflow(stack *);
- int isunderflow(stack *);
+ void push(stack *,int);//argumentlist are stack and item
+ int pop(stack *);//argumentlist are stack and item
+ int peep(stack *);//argumentlist are stack and item
+ int isoverflow(stack *);//argumentlist are stack and item
+ int isunderflow(stack *);//argumentlist are stack and item
 
  stack s;
  s.top=NIL;//intially declare top of stack=0
@@ -25,11 +25,11 @@ void main()
  {
   printf("\npress 1 for push \n 2 for pop \n3 for peep \n4 for exit");
   printf("\nenter the choice");
-  scanf("%d",&choice);
+  scanf("%d",&choice);//get choice by the user
   switch(choice)
   {
    case 1: x=isoverflow(&s);
-           if(x==1)
+           if(x==1)//check over flow of stack
            {
             printf("stack is overflow");
            }
@@ -40,7 +40,7 @@ void main()
             push(&s,item);
            }
           break;
-  case 2: x=isunderflow(&s);
+  case 2: x=isunderflow(&s);//check underflow of stack
            if(x==1)
            {
             printf("stack is underflow");
@@ -52,7 +52,7 @@ void main()
             
            }
           break;
-  case 3:x=isunderflow(&s);
+  case 3:x=isunderflow(&s);//check underflow of the stack
          if(x==1)
          {
            printf("stack is underflow");
