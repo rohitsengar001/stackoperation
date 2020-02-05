@@ -70,6 +70,34 @@ void main()
            printf("\npeep item is :%d",item);
           }
          break;
+ case 4: 
+       printf("enter the postfix expression :");
+       scanf("%s",Postfix);
+       for(i=0;Postfix[i]!='\0';i++)
+       {
+         if(Postfix[i]>='0' && Postfix[i]<='9')
+         {
+           push(&s,Postfix[i]-48);
+         }
+         else
+         {
+           a=pop(&s);
+           b=pop(&s);
+           if(Postfix[i]=='+')
+           {
+            r=a+b;
+            push(&s,r);
+           }
+           else if(Postfix[i]=='*')
+           {
+              r=a*b;
+              push(&s,r);
+           }
+           
+         }
+        printf("result is %d",r);
+       }
+       break;
  case 4:exit(0);
   default:printf("please enter the correct choice");
   }
