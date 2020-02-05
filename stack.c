@@ -98,7 +98,7 @@ void main()
         printf("result is %d",r);
        }
        break;
- case 4:exit(0);
+ case 5:exit(0);
   default:printf("please enter the correct choice");
   }
  }
