@@ -21,8 +21,8 @@ void main()
 
  int pop(stack *);//pop helps to Retrive the all stack element by fetching top of element when it will be called by programmer.
  int peep(stack *);//
- int isoverflow(stack *);//argumentlist are stack and item
- int isunderflow(stack *);//argumentlist are stack and item
+ int isoverflow(stack *);//argumentlist are reference of stack 
+ int isunderflow(stack *);//argumentlist are reference of stack
 //===================================Declaration Sectionends==================================================================
  
  stack s;
