@@ -16,7 +16,7 @@ typedef struct stacktype //typedef provides the alias name to the structure
 void main()
 {
  //=====================================Declaration Section===================================================================
- int item,choice,x,*p;
+ int item,choice,x;
  void push(stack *,int);//push methode helps to insert element into the stack and argument list are stack and item which is want to insert into the stack
 
  int pop(stack *);//pop helps to Retrive the all stack element by fetching top of element when it will be called by programmer.
@@ -25,7 +25,7 @@ void main()
  int isunderflow(stack *);//argumentlist are reference of stack
 //===================================Declaration Sectionends==================================================================
  
- stack s;
+ stack s;//create stack variable
  s.top=NIL;//intially declare top of stack=0
  while(1)
  {
