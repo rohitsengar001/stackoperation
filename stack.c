@@ -16,7 +16,8 @@ typedef struct stacktype //typedef provides the alias name to the structure
 void main()
 {
  //=====================================Declaration Section===================================================================
- int item,choice,x;
+ int item,choice,x,r;
+ char Postfix[100];
  void push(stack *,int);//push methode helps to insert element into the stack and argument list are stack and item which is want to insert into the stack
 
  int pop(stack *);//pop helps to Retrive the all stack element by fetching top of element when it will be called by programmer.
@@ -61,7 +62,7 @@ void main()
   case 3:x=isunderflow(&s);//check underflow of the stack.
          if(x==1)
          {
-           printf("stack is inderflow");
+           printf("stack is underflow");
          }
          else
           {
@@ -81,8 +82,8 @@ void main()
          }
          else
          {
-           a=pop(&s);
-           b=pop(&s);
+          int a=pop(&s);
+          int b=pop(&s);
            if(Postfix[i]=='+')
            {
             r=a+b;
