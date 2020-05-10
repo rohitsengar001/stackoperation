@@ -18,7 +18,7 @@ void main()
  //=====================================Declaration Section===================================================================
  int item,choice,x,r;
  char Postfix[100];
- void push(stack *,int);//push methode helps to insert element into the stack and argument list are stack and item which is want to insert into the stack
+ void push(stack *,int);//push method helps to insert element into the stack and argument list are stack and item which is want to insert into the stack
 
  int pop(stack *);//pop helps to Retrive the all stack element by fetching top of element when it will be called by programmer.
  int peep(stack *);//
