@@ -27,7 +27,7 @@ void main()
 //===================================Declaration Sectionends==================================================================
  
  stack s;//create stack variable
- s.top=NIL;//intially declare top of stack=0
+ s.top=NIL;//intially declare top of stack's index is -1
  while(1)
  {
   printf("\npress \n1 for push \n 2 for pop \n3 for peep \n4 for exit");//menu for user get select which operation they want to execute
